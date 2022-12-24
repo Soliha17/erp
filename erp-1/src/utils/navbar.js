@@ -21,7 +21,7 @@ export const sidebars = {
       icon: Support,
       title: "Тех поддержка:",
       to: "",
-      desc: "998 99 999 99 99",
+      desc: "+998 99 999 99 99",
     },
     { id: 7, icon: Settings, title: "Настройки", to: "" },
     { id: 8, icon: Logout, title: "Выйти", to: "" },

@@ -48,16 +48,16 @@ const Sidebar = ({ hambur, setHambur }) => {
             <li
               key={v.id}
               onClick={() => changeClick(v.id)}
-              className={`menu--item ${click == v.id && "active"} ${
+              className={`menu--item ${click === v.id && "active"} ${
                 hambur && "ham"
               } `}
             >
               <img
                 src={v.icon}
                 alt={`sidebars icon ${v.title}`}
-                className={` ${v.id == 9 && hambur && "ham"} `}
+                className={` ${v.id === 9 && hambur && "ham"} `}
               />
-              {v.title}
+              {v.title}<br/>{v.desc}
             </li>
           );
         })}
