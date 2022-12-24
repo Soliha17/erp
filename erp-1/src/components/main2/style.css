@@ -1,0 +1,285 @@
+.main--second {
+  height: auto;
+  padding-bottom: 128px;
+}
+.main__title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main__top,
+.main__middle,
+.main-excel,
+.main__trust {
+  padding: 24px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.blue-reject-btn {
+  width: 176px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  background: #2b63c0;
+  border-radius: 8px;
+  border: none;
+}
+.main__top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main__top h5,
+.main__middle h5,
+.input-group__middle h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.input-group--row {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.input-group__top input,
+.input-group__middle input {
+  padding: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 8px;
+  color: #8c8c8c;
+  height: 48px;
+}
+.input-group__top select,
+.input-group__top input {
+  width: 520px;
+}
+.input-group--row .input-group__top:nth-child(2) input {
+  width: 448px;
+}
+
+.main__title {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.main__title h4 {
+  width: 520px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.input-groups-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.select,
+.big-input {
+  width: 520px;
+}
+.red-star {
+  color: #fe346e;
+}
+.required-group__middle {
+  display: flex;
+  gap: 34px;
+}
+.required-input-group input {
+  width: 256px;
+}
+.required-toggle-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.required-toggle-group p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8c8c8c;
+}
+/* FOR BLUE TOGGLE */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: #2b63c0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 100px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* =========== */
+.small-input {
+  width: 248px;
+}
+.flex-input-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* MAIN EXCEL */
+.download-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+.download-group a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #303030;
+}
+.excel-img img {
+  width: -webkit-fill-available;
+}
+.excel-summa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.excel-summa p:first-child {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #131313;
+}
+.excel-summa p:last-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2b63c0;
+}
+/* MAIN TRUST */
+.top__trust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.top__trust .select {
+  width: 709px;
+}
+/* MAIN FOOTER */
+.main__footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__footer .subscribe-btn {
+  width: 224px;
+}
+.right__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.right__footer button {
+  width: 128px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  background: #2b63c0;
+  border-radius: 8px;
+  border: none;
+}

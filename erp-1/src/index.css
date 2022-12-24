@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500&family=Poppins:wght@700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&display=swap");
+
+/* ADD VARIABLES */
+:root {
+  --blue: #0c2556;
+  --white: #ffffff;
+}
+/* ADD SOME GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  position: relative;
+  background: #f8fafc;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.9;
+}
+input:required {
+  border: 1px solid #fe346e;
+}
+.select {
+  background: #ffffff;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8c8c8c;
+  padding: 12px;
+  outline: none;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.section {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 256px);
+}
+/* MAIN GENERAL STYLES */
+.main {
+  height: calc(100vh - 88px);
+  padding: 22px;
+  background: #f8fafc;
+  font-family: "Roboto", sans-serif;
+}
+.main .first-h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #303030;
+  letter-spacing: 0.02em;
+}
+
+/* START RESPONSIVE */
+@media (max-width: 1450px) {
+  .doc-number input,
+  .search-kont input {
+    max-width: 210px;
+  }
+  .status-doc select {
+    max-width: 210px;
+  }
+}
+@media (max-width: 1320px) {
+  .doc-number input,
+  .search-kont input {
+    max-width: 190px;
+  }
+  .status-doc select {
+    width: 190px;
+  }
+  .res-table {
+    overflow-x: scroll;
+  }
+  .table {
+    min-width: 110%;
+  }
+  .table--top {
+    justify-content: space-between;
+  }
+  .action-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main--bottom .bottom--action {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .action-right {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 1270px) {
+  .doc-number input,
+  .search-kont input {
+    max-width: 170px;
+  }
+  .status-doc select {
+    width: 170px;
+  }
+  .table {
+    min-width: 120%;
+  }
+}
+@media (max-width: 1220px) {
+  .filter--bottom {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1070px) {
+  .sidebar {
+    width: 70px;
+  }
+  .section {
+    width: calc(100% - 70px);
+  }
+  .logo-group {
+    padding: 15px;
+  }
+  .navbar--menu,
+  .navbar--condition {
+    gap: 15px;
+  }
+  .navbar--action {
+    gap: 0 !important;
+  }
+  .navbar--action img {
+    padding: 15px 7px;
+  }
+}
+@media (max-width: 900px) {
+  .table--top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .action-flex {
+    gap: 10px;
+  }
+  .action-group {
+    flex-wrap: wrap;
+    border: none;
+  }
+  .table {
+    min-width: 140%;
+  }
+  .navbar--info h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+  }
+  .navbar--info {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+  }
+}
+@media (max-width: 730px) {
+  .action-left,
+  .bottom-pagination {
+    align-self: center;
+  }
+  .action-right {
+    flex-direction: column;
+    align-self: center;
+  }
+  .table {
+    min-width: 160%;
+  }
+}
+@media (max-width: 620px) {
+  .main,
+  .filter-group,
+  .table-group {
+    padding: 10px;
+  }
+  .table {
+    min-width: 180%;
+  }
+  .action-left button {
+    width: 108px;
+    height: 38px;
+    font-size: 12px;
+  }
+  .select--box {
+    gap: 5px;
+    height: 38px;
+  }
+  .sinx--group button {
+    height: 38px;
+    font-size: 14px;
+  }
+  .sinx--group .register-btn {
+    width: 130px;
+  }
+  .sinx--group .sinx-btn {
+    width: 200px;
+  }
+  .pagination li {
+    margin: 0;
+  }
+  .pagination li:first-child a {
+    width: 80px;
+    font-size: 12px;
+    margin-right: 10px;
+    height: 38px;
+  }
+  .pagination li:last-child a {
+    width: 100px;
+    font-size: 12px;
+    height: 38px;
+  }
+  .navbar--condition .active {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .navbar--condition .active {
+    display: none;
+  }
+  .table {
+    min-width: 200%;
+  }
+  .first-h1 {
+    text-align: center;
+  }
+  .filter--top {
+    padding: 0 10px;
+  }
+  .filter--bottom {
+    justify-content: center;
+    text-align: center;
+    gap: 7px;
+  }
+  .action-group {
+    justify-content: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .sidebar,
+  .navbar--action {
+    display: none;
+  }
+  .sidebar {
+    width: 245px;
+  }
+  .sidebar p,
+  .sidebar .menu--link p {
+    display: block;
+  }
+  .section {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .navbar--info {
+    display: block;
+  }
+  .navbar--menu {
+    flex-direction: column;
+  }
+  .navbar--condition {
+    gap: 5px;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  .main .first-h1 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .action-group a {
+    padding: 7px 17px;
+    font-size: 13px;
+  }
+  .doc-number input,
+  .search-kont input {
+    max-width: 150px;
+    font-size: 13px;
+  }
+  .status-doc select {
+    font-size: 13px;
+    width: 150px;
+  }
+  .filter--bottom input,
+  .filter--bottom select {
+    padding: 7px;
+    padding-right: 0;
+  }
+  .status-doc select {
+    height: 38px;
+  }
+  .filter--bottom h4 {
+    margin-bottom: 5px;
+  }
+  .navbar--info {
+    padding: 2px;
+  }
+}
+@media (max-width: 470px) {
+  .navbar--info {
+    padding: 10px;
+  }
+  .navbar--menu {
+    display: none;
+  }
+  .menu-toggle {
+    margin: 10px;
+  }
+}
