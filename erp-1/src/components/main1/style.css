@@ -63,6 +63,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #2b63c0;
+  cursor: pointer;
 }
 .filter--bottom {
   display: flex;
