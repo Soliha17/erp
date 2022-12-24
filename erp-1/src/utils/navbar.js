@@ -6,9 +6,7 @@ import Deleting from "../assets/images/deleting.svg";
 import Support from "../assets/images/support.svg";
 import Settings from "../assets/images/settings.svg";
 import Logout from "../assets/images/logout.svg";
-import OneC from "../assets/images/1c.svg"
-
-
+import OneC from "../assets/images/1c.svg";
 export const sidebars = {
   sidebarsPage: [
     { id: 1, icon: Plus, title: "Создать (2)", to: "/second" },
@@ -21,8 +19,9 @@ export const sidebars = {
     {
       id: 6,
       icon: Support,
-      title: `Тех поддержка: +998 99 999 99 99`,
+      title: "Тех поддержка:",
       to: "",
+      desc: "998 99 999 99 99",
     },
     { id: 7, icon: Settings, title: "Настройки", to: "" },
     { id: 8, icon: Logout, title: "Выйти", to: "" },

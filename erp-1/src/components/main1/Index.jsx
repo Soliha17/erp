@@ -4,16 +4,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { linksOfMainFirts } from "../../utils/firtsMainLinks";
 
-import Red from "../../assets/images/red.svg";
-import Green from "../../assets/images/green.svg";
-import Yellow from "../../assets/images/yellow.svg";
-import Grey from "../../assets/images/grey.svg";
-import Filter from "../../assets/images/filter-icon.svg";
-import Checked from "../../assets/images/checked.svg";
-import Wrong from "../../assets/images/wrong.svg";
-import Reestr from "../../assets/images/reestr-icon.svg";
-import Left from "../../assets/images/left-icon.svg";
-import Right from "../../assets/images/right-icon.svg";
+import { imagePath } from "../../utils/mainOneImages";
 
 function MainFirst() {
   const [hover, setHover] = useState(1);
@@ -89,25 +80,25 @@ function MainFirst() {
             <div className="action-boxes">
               <div className="action--box">
                 <div>
-                  <img src={Red} alt="svg" />
+                  <img src={imagePath.red} alt="svg" />
                 </div>
                 <p>Отменен</p>
               </div>
               <div className="action--box">
                 <div>
-                  <img src={Green} alt="svg" />
+                  <img src={imagePath.green} alt="svg" />
                 </div>
                 <p>Подписано</p>
               </div>
               <div className="action--box">
                 <div>
-                  <img src={Yellow} alt="svg" />
+                  <img src={imagePath.yellow} alt="svg" />
                 </div>
                 <p>В ожидании</p>
               </div>
               <div className="action--box">
                 <div>
-                  <img src={Grey} alt="svg" />
+                  <img src={imagePath.grey} alt="svg" />
                 </div>
                 <p>Черновик</p>
               </div>
@@ -116,7 +107,7 @@ function MainFirst() {
           <div className="button-group__table">
             <button className="open-in-excel--btn">Открыть в Exсel</button>
             <button className="filter-table--btn">
-              <img src={Filter} alt="" />
+              <img src={imagePath.filter} alt="" />
               Фильтр таблицы
             </button>
           </div>
@@ -143,7 +134,7 @@ function MainFirst() {
                   <input type="checkbox" name="" id="" />
                 </td>
                 <td>
-                  <img src={Red} />
+                  <img src={imagePath.red} />
                 </td>
                 <td>Счет-фактура (вх.)</td>
                 <td>09.03.2021</td>
@@ -157,7 +148,7 @@ function MainFirst() {
                   <input type="checkbox" name="" id="" />
                 </td>
                 <td>
-                  <img src={Yellow} />
+                  <img src={imagePath.yellow} />
                 </td>
                 <td>Счет-фактура (вх.)</td>
                 <td>09.03.2021</td>
@@ -171,7 +162,7 @@ function MainFirst() {
                   <input type="checkbox" name="" id="" />
                 </td>
                 <td>
-                  <img src={Green} />
+                  <img src={imagePath.green} />
                 </td>
                 <td>Счет-фактура (вх.)</td>
                 <td>09.03.2021</td>
@@ -185,7 +176,7 @@ function MainFirst() {
                   <input type="checkbox" name="" id="" />
                 </td>
                 <td>
-                  <img src={Grey} />
+                  <img src={imagePath.grey} />
                 </td>
                 <td>Счет-фактура (вх.)</td>
                 <td>09.03.2021</td>
@@ -199,7 +190,7 @@ function MainFirst() {
                   <input type="checkbox" name="" id="" />
                 </td>
                 <td>
-                  <img src={Green} />
+                  <img src={imagePath.green} />
                 </td>
                 <td>Счет-фактура (вх.)</td>
                 <td>09.03.2021</td>
@@ -216,11 +207,11 @@ function MainFirst() {
         <div className="bottom--action">
           <div className="action-left">
             <button className="subscribe-btn">
-              <img src={Checked} alt="" />
+              <img src={imagePath.checked} alt="" />
               Подписать
             </button>
             <button className="reject-btn">
-              <img src={Wrong} alt="" />
+              <img src={imagePath.wrong} alt="" />
               Отменить
             </button>
           </div>
@@ -241,7 +232,7 @@ function MainFirst() {
               <button className="sinx-btn">Синхронизация с ГНК</button>
               <button className="register-btn">
                 Реестр
-                <img src={Reestr} alt="" />
+                <img src={imagePath.reestr} alt="" />
               </button>
             </div>
           </div>
@@ -250,7 +241,7 @@ function MainFirst() {
           <ul className="pagination">
             <li>
               <Link to="">
-                <img src={Left} alt="" />
+                <img src={imagePath.left} alt="" />
                 Назад
               </Link>
             </li>
@@ -272,7 +263,7 @@ function MainFirst() {
             <li>
               <Link to="">
                 Следующая
-                <img src={Right} alt="" />
+                <img src={imagePath.right} alt="" />
               </Link>
             </li>
           </ul>
