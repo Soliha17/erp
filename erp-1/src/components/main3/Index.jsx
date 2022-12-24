@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./style.css";
 
 import BigThanIcon from "../../assets/images/big-cursor-icon.svg";
@@ -16,7 +17,7 @@ function MainThird() {
       <span className="path__third">
         <Link to="/">Счёт-фактура </Link>
         <img src={BigThanIcon} alt="" />
-        <a href="">Счет-фактура №03-60378 от 31.03.2021</a>
+        <Link>Счет-фактура №03-60378 от 31.03.2021</Link>
       </span>
       <span className="condition__third">
         <span className="first__condition">
@@ -57,10 +58,10 @@ function MainThird() {
             <p>
               Статус: <br /> <span>ОЖИДАЕТ ВАШЕЙ ПОДПИСИ</span>
             </p>
-            <a href="">
+            <Link>
               <img src={TopIcon} alt="" />
               Прикрепить файл
-            </a>
+            </Link>
           </div>
           <div className="action-left bottom__second">
             <button className="subscribe-btn">

@@ -249,31 +249,31 @@ function MainFirst() {
         <div className="bottom-pagination">
           <ul className="pagination">
             <li>
-              <a href="#">
+              <Link to="">
                 <img src={Left} alt="" />
                 Назад
-              </a>
+              </Link>
             </li>
             <li className="active">
-              <a href="#">1</a>
+              <Link to="">1</Link>
             </li>
             <li>
-              <a href="#">2</a>
+              <Link to="">2</Link>
             </li>
             <li>
-              <a href="#">3</a>
+              <Link to="">3</Link>
             </li>
             <li>
-              <a href="#">...</a>
+              <Link to="">...</Link>
             </li>
             <li>
-              <a href="#">16</a>
+              <Link to="">16</Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="">
                 Следующая
                 <img src={Right} alt="" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

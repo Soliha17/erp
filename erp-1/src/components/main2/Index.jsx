@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -204,14 +205,14 @@ function MainSecond() {
       </div>
       <div className="main-excel">
         <div className="download-group">
-          <a href="">
+          <Link>
             <img src={DownloadIcon} alt="" />
             Загрузить из Excel
-          </a>
-          <a href="">
+          </Link>
+          <Link>
             <img src={DownloadIcon} alt="" />
             Скачать шаблон
-          </a>
+          </Link>
         </div>
         <span className="excel-img">
           <img src={ExcelImg} alt="" />
