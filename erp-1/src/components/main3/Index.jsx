@@ -62,12 +62,12 @@ function MainThird() {
               Прикрепить файл
             </a>
           </div>
-          <div class="action-left bottom__second">
-            <button class="subscribe-btn">
+          <div className="action-left bottom__second">
+            <button className="subscribe-btn">
               <img src={Checked} alt="" />
               Подписать
             </button>
-            <button class="reject-btn">
+            <button className="reject-btn">
               <img src={Wrong} alt="" />
               Отменить
             </button>

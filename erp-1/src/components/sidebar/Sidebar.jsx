@@ -27,9 +27,8 @@ const Sidebar = ({ hambur, setHambur }) => {
       <ul className="menu--list sidebar--top">
         {sidebars.sidebarsPage.map((item) => {
           return (
-            <Link to={item.to}>
+            <Link to={item.to} key={item.id}>
               <li
-                key={item.id}
                 onClick={() => changeClick(item.id)}
                 className={`menu--item ${click == item.id && "active"} ${
                   hambur && "ham"

@@ -19,7 +19,7 @@ function MainSecond() {
         <div className="input-group__top">
           <h5>Тип счета </h5>
           <form action="action_form.php" target="_top">
-            <select class="select">
+            <select className="select">
               <option value="status" default>
                 Стандарт
               </option>
@@ -62,7 +62,7 @@ function MainSecond() {
             <div className="input-group__middle">
               <h5>ИНН</h5>
               <form action="action_form.php" target="_top">
-                <select class="select">
+                <select className="select">
                   <option value="status" default>
                     Стандарт
                   </option>
@@ -83,9 +83,9 @@ function MainSecond() {
               </div>
               <div className="required-toggle-group">
                 <p>Односторонний счет?</p>
-                <label class="switch">
+                <label className="switch">
                   <input type="checkbox" />
-                  <span class="slider round"></span>
+                  <span className="slider round"></span>
                 </label>
               </div>
             </div>
@@ -228,7 +228,7 @@ function MainSecond() {
         <span className="top__trust">
           <h2>Доверенность</h2>
           <form action="action_form.php" target="_top">
-            <select class="select">
+            <select className="select">
               <option value="status" default>
                 Стандарт
               </option>
@@ -280,12 +280,12 @@ function MainSecond() {
         </span>
       </div>
       <div className="main__footer">
-        <div class="action-left">
-          <button class="reject-btn">
+        <div className="action-left">
+          <button className="reject-btn">
             <img src={Wrong} alt="" />
             Отменить
           </button>
-          <button class="subscribe-btn">
+          <button className="subscribe-btn">
             <img src={Checked} alt="" />
             Показать документ
           </button>
